@@ -1,0 +1,140 @@
+/* Общие стили */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background-color: #4caf50;
+  padding: 10px 0;
+}
+
+.navbar ul {
+  list-style: none;
+  text-align: center;
+}
+
+.navbar li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #ffeb3b;
+}
+
+footer {
+  text-align: center;
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+  font-size: 14px;
+}
+
+/* Стили для секции Hero */
+.hero {
+  text-align: center;
+  padding: 60px 0;
+  background-color: #ffffff;
+}
+
+.hero h1 {
+  font-size: 36px;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+.hero p {
+  font-size: 20px;
+}
+
+/* Стили для галереи яблок */
+.apple-gallery {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px 20px;
+  flex-wrap: wrap;
+}
+
+.apple-box {
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.apple-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.apple-image {
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+}
+
+.apple-info {
+  padding: 20px;
+}
+
+.apple-info h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.apple-info p {
+  font-size: 16px;
+}
+
+/* Dropdown стили */
+.dropdown-section {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.dropdown {
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  transition: border 0.3s;
+}
+
+.dropdown:hover {
+  border: 1px solid #4caf50;
+}
+
+/* Респонсивность */
+@media (max-width: 768px) {
+  .apple-gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .navbar li {
+    margin-bottom: 10px;
+  }
+}

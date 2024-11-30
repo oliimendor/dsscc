@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Сайт о Яблоках</title>
+  <link rel="stylesheet" href="stayle.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <ul>
+        <li><a href="#">Главная</a></li>
+        <li><a href="#">О Яблоках</a></li>
+        <li><a href="#">Виды Яблок</a></li>
+        <li><a href="#">Контакты</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" data-aos="fade-up">
+      <h1>Добро пожаловать на сайт о Яблоках</h1>
+      <p>Мы расскажем вам о самых лучших сортах яблок.</p>
+    </section>
+
+    <section class="apple-gallery">
+      <h2 data-aos="zoom-in">Наши Яблоки</h2>
+      <div class="apple-box" data-aos="flip-left">
+        <div class="apple-image" style="background-image: url('apple1.jpg');">    </div>
+        <div class="apple-info">
+          <h3>   Яблоко сорта Голден</h3>
+          <p>Это один из самых популярных сортов <a href="https://ru.wikipedia.org/wiki/%D0%93%D0%BE%D0%BB%D0%B4%D0%B5%D0%BD_%D0%94%D0%B5%D0%BB%D0%B8%D1%88%D0%B5%D1%81">яблок.</a>  </p>
+        </div>
+      </div>
+
+      <div class="apple-box" data-aos="flip-right">
+        <div class="apple-image" style="background-image: url('apple2.jpg');"></div>
+        <div class="apple-info">
+          <h3>Яблоко сорта <a href="https://ru.wikipedia.org/wiki/%D0%93%D1%80%D0%B5%D0%BD%D0%BD%D0%B8_%D0%A1%D0%BC%D0%B8%D1%82">Гренни Смит</a> </h3>
+          <p>Характеризуется кисловатым вкусом и зеленой кожурой.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="dropdown-section">
+      <h2>Выберите сорт яблока</h2>
+      <select class="dropdown">
+        <option value="golden">Голден</option>
+        <option value="granny">Гренни Смит</option>
+        <option value="fuji">Фуджи</option>
+        <option value="jonathan">Джонатан</option>
+      </select>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Сайт о Яблоках</p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
